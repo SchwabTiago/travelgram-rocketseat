@@ -4,39 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Travelgram</title>
 </head>
 
 <body>
     <nav>
         <div id="nav-container">
-            <img src="/assets/image/image.svg" alt="Travelgram Logo">
-            <img src="/assets/image/magnifying-glass.svg" alt="Search Icon">
+            <img src="/assets/image/logo.svg" alt="Travelgram Logo">
             <ul>
+                <li><img src="/assets/image/magnifying-glass.svg" alt="Search Icon" id="search_icon"></li>
                 <li>Explorar</li>
                 <li>Minhas Viajens</li>
-                <li><img src="/assets/image/profile-pic.png"></li>
+                <li><img src="/assets/image/profile-pic.png" id="profile-icon"></li>
             </ul>
         </div>
     </nav>
     <section>
-        <div>
-            <img src="/assets/image/profile-pic.png" alt="Profile Picture">
-            <h2>Isabela Torres</h2>
-            <p>
-                Amante de viagens, cultura e gastronomia. 🌍✈️
-                Aqui compartilho as histórias registradas em cada clique, explorando cantinhos fascinantes do nosso
-                planeta a partir da movimentada cidade de São Paulo. 🏙️📸
-            </p>
-        </div>
-        <div>
-            <img src="/assets/image/map-pin.svg">
-            <p>São Paulo, Brazil</p>
-            <img src="/assets/image/airplane-tilt.svg">
-            <p>37 países</p>
-            <img src="/assets/image/image.svg">
-            <p>240 paises</p>
+        <div id="section-container">
+            <div id="profile-container">
+                <img src="/assets/image/profile-pic.png" alt="Profile Picture">
+                <div id="profile-description">
+                    <h2>Isabela Torres</h2>
+                    <p>
+                        Amante de viagens, cultura e gastronomia. 🌍✈️
+                        Aqui compartilho as histórias registradas em cada clique, explorando cantinhos fascinantes do nosso
+                        planeta a partir da movimentada cidade de São Paulo. 🏙️📸
+                    </p>
+                </div>
+            </div>
+            <div id="profile-status">
+                <p><img src="/assets/image/map-pin.svg">São Paulo, Brazil</p>
+                <p><img src="/assets/image/airplane-tilt.svg"> 37 países</p>
+                <p><img src="/assets/image/image.svg"> 240 paises</p>
+            </div>
         </div>
     </section>
     <main>
@@ -56,11 +57,13 @@
         </div>
     </main>
     <footer>
-        <ul>
-            <li>Travelgram © 2024</li>
-            <li>Termos de uso</li>
-            <li>Política de privacidade</li>
-        </ul>
+        <div id="footer-container">
+            <p>Travelgram © 2024</p>
+            <ul>
+                <li>Termos de uso</li>
+                <li>Política de privacidade</li>
+            </ul>
+        </div>
     </footer>
 </body>
 
